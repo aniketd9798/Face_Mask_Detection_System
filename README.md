@@ -1,4 +1,4 @@
-#Real Time Face Mask Detection and Analytics System
+Real Time Face Mask Detection and Analytics System
 
 Overview
 This project is an end to end Computer Vision and Deep Learning application that detects in real time whether a person is wearing a face mask or not. It uses a custom trained Convolutional Neural Network for high accuracy predictions and OpenCV for live face tracking.
@@ -39,4 +39,4 @@ python detect_mask_webcam.py
 
 Step 4: Run the Analytics Dashboard
 Open a new terminal window and run this command to see the live website.
-streamlit run app.py
+streamlit run app.py](https://github.com/aniketd9798/Face_Mask_Detection_System/edit/main/README.md)
