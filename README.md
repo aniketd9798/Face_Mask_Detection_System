@@ -59,7 +59,7 @@ face-mask-detection-system/
 
 ###  Step 1: Clone the Repository
 
-git clone https://github.com/aniketd9798/face-mask-detection-system.git
+git clone:(https://github.com/aniketd9798/Face_Mask_Detection_System)
 cd face-mask-detection-system
 
 ###  Step 2: Install Dependencies
