@@ -1,4 +1,4 @@
-                                          #Real Time Face Mask Detection and Analytics System
+#Real Time Face Mask Detection and Analytics System
 
 #Overview
 This project is an end to end Computer Vision and Deep Learning application that detects in real time whether a person is wearing a face mask or not. It uses a custom trained Convolutional Neural Network for high accuracy predictions and OpenCV for live face tracking.
@@ -27,7 +27,7 @@ requirements.txt: Required libraries to run the project.
 #How to Run This Project Locally
 
 Step 1: Clone the repository
-git clone https://github.com/yourusername/face-mask-detection-system.git
+git clone https://github.com/aniketd9798/face-mask-detection-system.git
 cd face-mask-detection-system
 
 Step 2: Install dependencies
