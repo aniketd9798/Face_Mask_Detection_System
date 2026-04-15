@@ -1,46 +1,107 @@
-Real Time Face Mask Detection and Analytics System
+#  Real-Time Face Mask Detection and Analytics System
 
-Overview
-This project is an end to end Computer Vision and Deep Learning application that detects in real time whether a person is wearing a face mask or not. It uses a custom trained Convolutional Neural Network for high accuracy predictions and OpenCV for live face tracking.
+##  Overview
 
-Going beyond standard detection, this system acts as a complete data pipeline by automatically logging compliance data to a CSV file and visualizing it in a real time web dashboard using Streamlit.
+This project is a full-stack Computer Vision and Deep Learning system designed to detect whether a person is wearing a face mask in real time using a webcam.
 
-Key Features
-Real Time Detection: Processes live webcam feeds to detect faces and classify mask usage instantly.
-High Accuracy: Powered by a transfer learning model trained on a balanced dataset of masked and unmasked faces.
-Automated Data Logging: Tracks the number of masked vs unmasked individuals over time and saves the data to a local CSV file.
-Live Analytics Dashboard: A Streamlit web application that reads the live dataset and displays key metrics and compliance trend lines.
+Beyond detection, the system builds a complete data pipeline by logging mask compliance data and visualizing it through an interactive dashboard using Streamlit.
 
-Technology Stack
-Language: Python
-Computer Vision: OpenCV
-Deep Learning: TensorFlow and Keras
-Data Processing: Pandas and NumPy
-Web Dashboard: Streamlit
+##  Key Features
 
-File Structure
-detect_mask_webcam.py: The main OpenCV script that opens the webcam, detects faces, runs the AI model, and logs data.
-app.py: The Streamlit dashboard script that visualizes the logged data.
-mask_detector.h5: The pre trained Deep Learning model.
-mask_analytics_log.csv: The live database tracking compliance over time.
-requirements.txt: Required libraries to run the project.
+###  Real-Time Detection
 
-How to Run This Project Locally
+* Uses webcam input to detect faces instantly
+* Classifies each face as:
 
-Step 1: Clone the repository
-git clone https://github.com/yourusername/face-mask-detection-system.git
+  * ✅ Mask
+  * ❌ No Mask
+* Powered by OpenCV
+
+###  High Accuracy Model
+
+* Built using transfer learning
+* Trained on a balanced dataset
+* Developed with TensorFlow and Keras
+
+###  Automated Data Logging
+
+* Logs detection results into a CSV file
+* Tracks masked and unmasked counts over time
+* Maintains timestamp-based records
+
+###  Live Analytics Dashboard
+
+* Built with Streamlit
+* Displays real-time statistics
+* Shows compliance trends and comparisons
+
+##  Technology Stack
+
+*  Language: Python
+*  Computer Vision: OpenCV
+*  Deep Learning: TensorFlow, Keras
+*  Data Processing: Pandas, NumPy
+*  Web Dashboard: Streamlit
+
+##  Project Structure
+
+face-mask-detection-system/
+
+├── detect_mask_webcam.py     #  Real-time detection and logging
+├── app.py                    #  Streamlit dashboard
+├── mask_detector.h5          #  Trained model
+├── mask_analytics_log.csv    #  Logged data
+├── requirements.txt          #  Dependencies
+└── README.md                 #  Documentation
+
+
+##  How to Run This Project Locally
+
+###  Step 1: Clone the Repository
+
+git clone https://github.com/aniketd9798/face-mask-detection-system.git
 cd face-mask-detection-system
 
-Step 2: Install dependencies
+###  Step 2: Install Dependencies
+
 pip install -r requirements.txt
 
-Step 3: Run the Detection Camera
-This will open your webcam and start logging data.
+###  Step 3: Run the Detection System
+
 python detect_mask_webcam.py
 
-Step 4: Run the Analytics Dashboard
-Open a new terminal window and run this command to see the live website.
+ This will open your webcam, start real-time detection, and log data automatically.
+
+###  Step 4: Run the Analytics Dashboard
+
+(Open a new terminal)
 streamlit run app.py
-Step 4: Run the Analytics Dashboard
-Open a new terminal window and run this command to see the live website.
-streamlit run app.py](https://github.com/aniketd9798/Face_Mask_Detection_System/edit/main/README.md)
+
+ This will launch the dashboard in your browser and display live analytics.
+
+##  System Workflow
+
+Webcam Input → Face Detection → Mask Classification → Data Logging → Dashboard Visualization
+
+##  Use Cases
+
+*  Schools and colleges
+*  Offices and workplaces
+*  Hospitals and healthcare environments
+*  Public surveillance systems
+
+##  Future Enhancements
+
+*  Alert system for non-compliance
+*  Cloud-based database integration
+*  obile-friendly dashboard
+*  Face recognition with identity tracking
+
+##  Contribution
+
+Contributions are welcome.
+Fork the repository, create a feature branch, and submit a pull request.
+
+##  License
+This project is open-source and available under the MIT License.
+
